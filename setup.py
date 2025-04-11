@@ -1,0 +1,36 @@
+from setuptools import setup
+
+setup(
+    name="viewgen-3d",
+    packages=[
+        "viewgen3d",
+        "viewgen3d.diffusion",
+        "viewgen3d.models",
+        "viewgen3d.models.generation",
+        "viewgen3d.models.nerf",
+        "viewgen3d.models.nerstf",
+        "viewgen3d.models.nn",
+        "viewgen3d.models.stf",
+        "viewgen3d.models.transmitter",
+        "viewgen3d.rendering",
+        "viewgen3d.rendering.blender",
+        "viewgen3d.rendering.raycast",
+        "viewgen3d.util",
+    ],
+    install_requires=[
+        "filelock",
+        "Pillow",
+        "torch",
+        "fire",
+        "humanize",
+        "requests",
+        "tqdm",
+        "matplotlib",
+        "scikit-image",
+        "scipy",
+        "numpy",
+        "blobfile",
+        "clip @ git+https://github.com/openai/CLIP.git",
+    ],
+    author="OpenAI",
+)
